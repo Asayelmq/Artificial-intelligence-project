@@ -1,0 +1,349 @@
+go:-hypothesize(S),
+ write('I guess that the specialty is:'),
+ write(S),
+ nl.
+
+hypothesize(math) :-math,!.
+hypothesize(actuarial_mathematics) :-actuarial_mathematics,!.
+hypothesize(political_science) :-political_science,!.
+hypothesize(accouting) :-accouting,!.
+hypothesize(markting) :-markting,!.
+hypothesize(law) :-law,!.
+hypothesize(psychology) :-psychology,!.
+hypothesize(human_resource) :-human_resource,!.
+hypothesize(business_mange) :-business_mange,!.
+hypothesize(medical_engineering) :-medical_engineering,!.
+hypothesize(network_engineer) :-network_engineer,!.
+hypothesize(aviation_engineering) :-aviation_engineering,!.
+hypothesize(cyber_security) :-cyber_security,!.
+hypothesize(ai) :-ai,!.
+hypothesize(computer_science) :-computer_science,!.
+hypothesize(biochemistry) :-biochemistry,!.
+hypothesize(health_informatics) :-health_informatics,!.
+hypothesize(nursing) :-nursing,!.
+hypothesize(dentist) :-dentist,!.
+hypothesize(medicine) :-medicine,!.
+hypothesize(chemistry) :-chemistry,!.
+hypothesize(physics) :-physics,!.
+hypothesize(criminology) :-criminology,!.
+hypothesize(interior_design) :-interior_design,!.
+hypothesize(marine_science) :-marine_science,!.
+
+
+hypothesize(unknown).
+
+/*specialty identification rules and the verify is meaning of question */
+/*there is a cut off quieston*/
+math:-
+ theoretical,problem_solving,learn,communcation,calculation,details_attention,data_analysis,mathematics,challenge,possibilities,
+ verify(count),
+ verify(charts),
+ verify(proof),
+ verify(satisfaction_right_answer),
+ verify(career_involves_math).
+
+actuarial_mathematics:-
+ theoretical,problem_solving,learn,communcation,calculation,details_attention,data_analysis,mathematics,challenge,possibilities,
+ verify(investments),
+ verify(logical_mathematical),
+ verify(financial_risk_management),
+ verify(working_in_banks),
+ verify(financial_consulting).
+
+political_science:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,following_news,read_research,accept_viewpoints,interest_history,different_cultures,
+ verify(learning_languages),
+ verify(ability_to_memorize),
+ verify(public_speaking),
+ verify(supporting_issues),
+ verify(event_analysis).
+
+accouting:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,decision,accounting_entities,investment,macroeconomics,financial_transactions,
+ verify(knowledge_accounting_rules),
+ verify(enter_tax),
+ verify(related_money_and_banks),
+ verify(accounting_administration),
+ verify(average_zakat).
+
+markting:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,decision,persuasion,sales_admin,commerce,product_mange,
+ verify(markting_strstegic),
+ verify(markting),
+ verify(advertising),
+ verify(sales),
+ verify(dealing_with_customers).
+
+law:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,decision,persuasion,office,helping_people,justice,
+ verify(working_in_courtoom),
+ verify(good_listener),
+ verify(public_speaking),
+ verify(brave).
+
+psychology:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,decision,persuasion,office,helping_people,sympathy,
+ verify(caring_about_emotions),
+ verify(learning_about_memory),
+ verify(studying_the_behaviors_of_others),
+ verify(study_how_to_perception_things),
+ verify(learning_about_mental_disorders).
+
+human_resource:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,decision,persuasion,office,creative,leadership,
+ verify(career_development),
+ verify(organising_business_methods),
+ verify(compensation_systems),
+ verify(suggest_employment_policies).
+
+business_mange:-
+ theoretical,problem_solving,learn,communcation,critical_thinking,decision,persuasion,office,creative,leadership,
+ verify(economic_studies),
+ verify(skills_related_to_various_administrative_functions),
+ verify(running_a_business),
+ verify(putting_right_person_in_the_right_place),
+ verify(making_plans_and_bullding_strategies).
+
+medical_engineering:-
+ practical,technical_skills,learn,problem_solving,study_computer,field_of_engineering,equipment,engineering_judgment,related_to_medicine,medical_advancement,
+ verify(combines_engineering_skills_and_biological_science),
+ verify(use_ai_in_making_a_clinical_decision),
+ verify(use_engineering_to_produce_solutions_that_meet_health_needs),
+ verify(ability_to_develop_and_conduct_an_appropriate_health_trial).
+
+network_engineer:-
+ practical,technical_skills,learn,problem_solving,study_computer,field_of_engineering,equipment,engineering_judgment,
+ verify(internet),
+ verify(network_maintenance),
+ verify(network_improving),
+ verify(controlling_internal_networks ),
+ verify(network_settings ),
+ verify(determine_network_permissions),
+ verify(building_networks_designs).
+
+
+aviation_engineering:-
+practical,technical_skills,learn,problem_solving,study_computer,field_of_engineering,equipment,engineering_judgment,air_transportation,aircraft_structure, 
+verify(learn_about_defense_technologies),
+verify(studying_engines),
+verify(learning_about_electrical_systems_in_aircraft),
+verify(studying_fluid_science),
+verify(learning_aircraft_design_and_production).
+
+cyber_security:-
+ practical,technical_skills,learn,problem_solving,study_computer,work,social_communication,software_development,security,encryption,
+ verify(network_monitoring_and_provide_security_solutions),
+ verify(analysis_persistent_threats ),
+ verify(analysis_of_cyber_incidents_and_assist_in_data_recovery),
+ verify(deploy_countermeasures).
+
+ai:-
+ practical,technical_skills,learn,problem_solving,study_computer,work,social_communication,software_development,machine_learning,interaction_with_humans,
+ verify(make_robot),
+ verify(solve_complex_algorithms),
+ verify(solve_algorithm_engineering),
+ verify(is_related_to_chat_gbt),
+ verify(machine_training).
+
+computer_science:-
+ practical,technical_skills,learn,problem_solving,study_computer,work,social_communication,software_development,theories,fundamental,
+ verify(aspects_of_computer_science),
+ verify(recognize_and_judge_the_efficiency_and_usefulness_of_computer_science),
+ verify(learning_about_different_techniques_and_skills_needed_to_practice_computer),
+ verify(qualification_in_the_field_of_computer_science).
+
+biochemistry:-
+practical,technical_skills,learn,problem_solving,labs,health_care,study_of_human_body,learning_toxicology,dna_work,learning_about_chemical_reactions,
+verify(studying_how_biomolecules_work),
+verify(studying_how_microbiology_work),
+verify(studying_communication_within_cells_and_organs),
+verify(learning_about_genetics),
+verify(studying_how_proteins_work).
+
+health_informatics:-
+practical, technical_skills,learn,problem_solving,labs,health_care,study_of_human_body,records,
+ verify(develop_treatment_plans),
+ verify(determine_patients_needs),
+ verify(interviews_with_healthcare_and_patients),
+ verify(training_health_care_staff ),
+ verify(developing_medical_records ),
+ verify(health_information_management),
+ verify(improving_clinical_outcomes).
+
+nursing:-
+practical, technical_skills,learn,problem_solving,labs,health_care,study_of_human_body,records,
+ verify(comprehensive_nursing_care),
+ verify(strong_sense_of_empathy),
+ verify(awareness_of_nursing_knowledge),
+ verify(standards_of_the_nursing_profession),
+ verify(dealing_with_different_kind_of_people).
+
+dentist:-
+practical,technical_skills,learn,problem_solving,labs,health_care,study_of_human_body,
+ verify(dental_helth),
+ verify(oral_helth),
+ verify(working_in_close_people),
+ verify(working_with_your_hand).
+
+medicine:-
+practical,technical_skills,learn,problem_solving,labs,health_care,study_of_human_body,anatomy,emergency,anesthesia_and_resuscitation,
+ verify(study_orthopaedic_surgery),
+ verify(study_physiology),
+ verify(study_histology),
+ verify(study_embryology),
+ verify(study_pharmacology).
+
+chemistry:-
+practical,technical_skills,learn,problem_solving,labs,natural_science,report,interactions,compositionof_the_material,manufacturing,
+ verify(mixing_solutions),
+ verify(periodic_table),
+ verify(matter_changes),
+ verify(states_of_matter),
+ verify(electrons).
+
+physics:-
+practical,technical_skills,learn,problem_solving,labs,natural_science,report,studying_electricity,energy_science,study_the_laws_of_motion,
+ verify(theory_of_relativity),
+ verify(study_galaxies),
+ verify(law_of_power),
+ verify(the_speed_of_light),
+ verify(newton_laws).
+
+
+
+criminology:-
+practical,technical_skills,learn,problem_solving,labs,motives,justice,laws,collecting_evidence,patterns,
+ verify(studying_about_crimes),
+ verify(investigation_to_uncover_the_facts),
+ verify(studying_the_behavior_of_criminals),
+ verify(studying_the_impact_of_crime_in_life),
+ verify(studying_bioforensics).
+
+interior_design:-
+practical,technical_skills,learn,problem_solving,labs,designing,furniture,graphics,spatial_planning,materials,
+ verify(styling_the_internal_objects),
+ verify(learning_about_esthetics_of_the_environment),
+ verify(learning_about_renovation_types),
+ verify(ability_to_create_color_palettes),
+ verify(studying_about_harmony_in_objects).
+
+marine_science:-
+practical, technical_skills,learn,observation,monitoring,deduction,patient,exploring,research,written_and_oral_skills, 
+ verify(study_of_pollutants),
+ verify(ready_to_work_outside_regardless_of_weather_condition ),
+ verify(love_marine_environment ),
+ verify(enjoy_marine_science ),
+ verify(work_in_the_maritime_field).
+
+
+
+/* ----------------------------------------------------*/
+
+
+/*classification rules */
+theoretical:-verify(theoretical_and_does_not_require_a_laboratory),!.
+problem_solving:-verify(practical_applications_to_solve_real_problem),!.
+learn:-verify(the_desire_to_learn_and_keep_pace_with_development),!.
+communcation:-verify(possess_communcation_skills_and_work_in_team_spirit),!.
+calculation:-verify(ability_to_solve_complex_calculation),!.
+details_attention:-verify(good_attention_to_detail),!.
+data_analysis:-verify(data_analysis_and_interpretation),!.
+mathematics:-verify(numbers_and_their_operations),!. 
+challenge:-verify(being_faced_with_difficulties),!. 
+possibilities:-verify(something_could_realistically_happen),!. 
+critical_thinking:-verify(strong_analytical_and_critical_thinking_abilites),!.
+following_news:-verify(keeping_up_with_current_events),!.  
+read_research:-verify(read_research),!.     
+accept_viewpoints:-verify(accept_other_people_point_of_view),!. 
+interest_history:-verify(interest_history),!.
+different_cultures:-verify(accept_and_deal_with_different_cultures),!.
+decision:-verify(making_decision),!.
+persuasion:-verify(persuade_others_to_support_your_ideas),!.
+accounting_entities:-verify(study_the_types_of_accounting_entities),!. 
+investment:-verify(investment_study),!. 
+macroeconomics:-verify(study_changes_in_macroeconomics),!. 
+financial_transactions:-verify(study_the_effects_financial_transactions),!. 
+sales_admin:-verify(study_of_sales_admin),!. 
+commerce:-verify(deal_with_commerce),!. 
+product_mange:-verify(study_how_product_mange),!. 
+office:-verify(requiras_sitting_at_an_office),!.
+helping_people:-verify(helping_and_guiding_people),!.
+justice:-verify(learning_how_to_ensure_justice),!. 
+sympathy:-verify(sympathy_with_others),!.
+creative:-verify(requires_innovation_and_creative_thinking_skills),!.
+leadership:-verify(directing_people_towards_the_correct_ways_of_doing_works),!.
+practical:-verify(application_of_concepts_and_practice),!.
+technical_skills:-verify(technical_skills),!.
+study_computer:-verify(studies_computers),!.
+field_of_engineering:-verify(field_of_engineering),!.
+equipment:-verify(there_is_equipment_and_its_use),!.
+engineering_judgment:-verify(use_engineering_judgment_on_experimental_results),!.
+related_to_medicine:-verify(related_to_medicine),!.
+medical_advancement:-verify(striving_for_medical_progress),!.
+work:-verify(understand_how_things_work),!.
+social_communication:-verify(seeking_continuesd_social_contact),!.
+software_development:-verify(software_development_and_improvement),!.
+air_transportation:-verify(learning_about_air_transportation),!. 
+aircraft_structure:-verify(studies_aircraft_structure),!. 
+security:-verify(important_to_maintain_secure_communication),!.
+encryption:-verify(useing_cryptography_to_save_data),!.
+machine_learning:-verify(how_does_machine_learning_work),!.
+interaction_with_humans:-verify(studying_how_to_make_machines_interact_with_humans),!.
+theories:-verify(application_of_the_theory_of_computing_sciences),!.
+fundamental:-verify(studies_computer_basics),!.
+learning_toxicology:-verify(study_and_learn_toxicology),!. 
+dna_work:-verify(learning_about_how_dna_works),!.
+learning_about_chemical_reactions:-verify(learning_about_chemical_reactions),!. 
+labs:-verify(requires_presence_in_laboratories),!. 
+health_care:-verify(health_care),!.
+study_of_human_body:-verify(study_of_human_body),!.
+records:-verify(record_patient_notes),!.
+anatomy:-verify(anatomy_study),!.
+emergency:-verify(dealing_with_emergency_situations),!.
+anesthesia_and_resuscitation:-verify(anesthesia_and_resuscitation),!.
+natural_science:-verify(study_of_natural_sciences),!.
+report:-verify(give_description_of_something),!.
+interactions:-verify(study_of_chemical_reactions),!.
+compositionof_the_material:-verify(compositionof_the_material),!. /**/
+manufacturing:-verify(producing_goods_in_large_numbers),!. 
+research:-verify(doing_research),!. 
+studying_electricity:-verify(studying_electricity),!.
+energy_science:-verify(energy_science),!.
+study_the_laws_of_motion:-verify(study_the_laws_of_motion),!.
+motives:-verify(study_of_motivations),!. 
+laws:-verify(learning_how_to_enforce_the_laws),!. 
+collecting_evidence:-verify(collecting_evidence),!.
+patterns:-verify(study_the_patterns_of_crimes),!. 
+designing:-verify(designing_ability),!. 
+furniture:-verify(learn_how_to_organize_furniture),!. 
+graphics:-verify(implementing_creative_graphics),!. 
+spatial_planning:-verify(learning_about_spatial_planning),!. 
+materials:-verify(studying_materials),!. 
+observation:-verify(ability_to_observe),!.
+monitoring:-verify(watching_or_noticing_particular_things),!.
+deduction:-verify(answer_by_thinking_about_the_known_facts),!. 
+exploring:-verify(passion_for_discovering_things),!. 
+written_and_oral_skills:-verify(written_and_oral_skills),!.
+patient:-verify(requires_patience_and_endurance),!. 
+
+
+/*how to ask question*/
+ask(Question):-
+ write('Does the specialty have the following attribute:'),
+ write(Question),
+ write('?'),
+ read(Response),
+ nl,
+ ((Response==yes;Response==y)
+ ->
+assert(yes(Question));
+assert(no(Question)),fail).
+ :-dynamic yes/1,no/1.
+ verify(S) :-
+ (yes(S)
+ ->
+ true;
+ (no(S)
+ ->
+ fail;
+ ask(S))).
